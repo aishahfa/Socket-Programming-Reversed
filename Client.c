@@ -29,9 +29,9 @@ int main(){
 
 	nBytes = strlen(buffer) + 1;
 
-	send(clientSocket,buffer,nBytes,0);
+	send(clientSock,buffer,nBytes,0);
 
-	recv(clientSocket, buffer, 1024, 0);
+	recv(clientSock, buffer, 1024, 0);
 
 	printf("Received from server: %s\n\n",buffer); 
 
